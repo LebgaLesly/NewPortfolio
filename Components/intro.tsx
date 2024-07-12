@@ -8,13 +8,19 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
+
 //import images
 import profile from "@/public/Images/Profile1.jpeg";
 import { FaGithubSquare } from "react-icons/fa";
+import useSectionView from "@/hooks/usesectionview";
+
 
 function Intro() {
+
+  const { ref } = useSectionView("Home", 0.5)
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id='home'>
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id='home' ref={ref}>
       <div className="flex intems-center justify-center">
         <div className="relative ">
           <motion.div
