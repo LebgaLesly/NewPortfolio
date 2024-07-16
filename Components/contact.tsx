@@ -1,9 +1,8 @@
 "use client";
 
 //import dependencies
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-
 
 //import components
 import useSectionView from "@/hooks/usesectionview";
@@ -12,10 +11,16 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitButton from "./submit-btn";
 import toast from "react-hot-toast";
 
-
 const Contact = () => {
   const { ref } = useSectionView("Contact", 0.5);
- 
+
+  const [senderEmail, setSenderEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = () => {
+    setSenderEmail("");
+    setMessage("");
+  };
 
   return (
     <motion.section
@@ -44,15 +49,16 @@ const Contact = () => {
       <form
         className="mt-10 flex flex-col"
         action={async (formData) => {
-          const {data, error } = await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
 
           if (error) {
-            toast.error(error)
-            return
+            toast.error(error);
+            return;
           }
 
-          toast.success("Email sent successfully")
+          toast.success("Email sent successfully");
         }}
+        onSubmit={handleSubmit}
       >
         <input
           type="email"
@@ -61,13 +67,17 @@ const Contact = () => {
           required
           maxLength={500}
           name="senderEmail"
+          value={senderEmail}
+          onChange={(e) => setSenderEmail(e.target.value)}
         />
         <textarea
-          className="h-52 my-3 rounded-lg border-black/10 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg border-black/10 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:text-black"
           placeholder="Your Message"
           required
           maxLength={500}
           name="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <SubmitButton />
       </form>
