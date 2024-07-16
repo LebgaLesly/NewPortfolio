@@ -5,8 +5,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 //import components
-import SectionHeading from "./section-heading";
 import useSectionView from "@/hooks/usesectionview";
+import SectionHeading from "./section-heading";
 
 const About = () => {
   const { ref } = useSectionView("About");

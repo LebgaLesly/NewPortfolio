@@ -5,9 +5,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 //import components
-import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import useSectionView from "@/hooks/usesectionview";
+import SectionHeading from "./section-heading";
 
 const fadeInAnimationVarinats = {
   initial: {

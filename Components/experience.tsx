@@ -10,10 +10,10 @@ import "react-vertical-timeline-component/style.min.css";
 
 
 //import components
-import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 import useSectionView from "@/hooks/usesectionview";
 import useTheme from "@/hooks/usetheme";
+import SectionHeading from "./section-heading";
 
 const Experience = () => {
   const { ref } = useSectionView("Experience");

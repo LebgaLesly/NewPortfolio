@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 //import components
 import useSectionView from "@/hooks/usesectionview";
-import SectionHeading from "./section-heading";
 import { sendEmail } from "@/actions/sendEmail";
-import SubmitButton from "./submit-btn";
 import toast from "react-hot-toast";
+import SectionHeading from "./section-heading";
+import SubmitButton from "./submit-btn";
 
 const Contact = () => {
   const { ref } = useSectionView("Contact", 0.5);

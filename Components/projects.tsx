@@ -4,10 +4,10 @@
 import React from "react";
 
 //import compoenents
-import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
-import Project from './project';
 import useSectionView from "@/hooks/usesectionview";
+import SectionHeading from "./section-heading";
+import Project from "./project";
 
 
 const Projects = () => {
