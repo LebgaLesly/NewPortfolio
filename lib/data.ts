@@ -5,13 +5,11 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 //import images
-import portfolio from "@/public/Images/portfolio.png"
-import quickandeasy from "@/public/Images/QuickAndEasy.png"
-import quickmatch from "@/public/Images/QuickMatch.png"
-import reina from '@/public/Images/Reina.png'
-import technet from '@/public/Images/TechNet.png'
-
-
+import portfolio from "@/public/Images/portfolio.png";
+import quickandeasy from "@/public/Images/QuickAndEasy.png";
+import quickmatch from "@/public/Images/QM.png";
+import reina from "@/public/Images/Reina.png";
+import technet from "@/public/Images/TechNet.png";
 
 export const links = [
   {
@@ -42,52 +40,74 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Codecademy",
+    location: "E-learning",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I got certified after over 1 year of study. i got certifications in Frontend and Backend Development",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021 - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Frontend Developer",
+    location: "Texas",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "While pursiung my certifications, i worked as a frontend developer at ProfuseCC",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Engineer",
+    location: "Douala, Cameroon",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I worked as a software enginner in a company called Hebron Global. Here, I worked both on mobile and web apps",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024",
+  },
+  {
+    title: "Frontend Developer",
+    location: "South Africa",
+    description:
+      "I am currently working as a frontend developer at a start-up located in south africa. I build intuitive user interfaces using React and NextJs ",
+    icon: React.createElement(FaReact),
+    date: "2024 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Portfolio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      " A collection of standout work samples showcasing my skills and expertise in as a Full stack developer. Demonstrates creativity, problem-solving abilities, and quality results",
+    tags: ["ReactJs", "TailwindCss", "Aws"],
     imageUrl: portfolio,
   },
   {
-    title: "rmtDev",
+    title: "Quick and Easy",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Designed and developed a fully functional e-commerce website using basic HTML, CSS, and JavaScript.",
+    tags: ["HTML", "CSS", "Javascript", "Aws"],
     imageUrl: quickandeasy,
   },
   {
-    title: "Word Analytics",
+    title: "Technet",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Designed and developed a fully functional Full Stack e-commerce website using the MERN stack",
+    tags: ["React", "Redux", "ExpreeJs", "Tailwind", "MongoDB", "AWS"],
     imageUrl: technet,
+  },
+  {
+    title: "Quick and Match",
+    description: 
+      "Designed and developed a matching game  using plain Jvascript, HTML and CSS",
+    tags: ["HTML", "CSS", "Javascript", "AWS"],
+    imageUrl: quickmatch,
+  },
+  {
+    title: "Reina",
+    description:
+      "Designed and developed a landing page using basic HTML, CSS, and JavaScript",
+    tags: ["HTML", "CSS", "Javascript", "AWS"],
+    imageUrl: reina,
   },
 ] as const;
 

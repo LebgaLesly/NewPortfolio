@@ -8,6 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
+
 //import components
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
@@ -19,7 +20,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="max-w-[53rem] scroll-mt-28 text-center sm:mb-60 mb-28 mt-28 sm:mt-0"
       ref={ref}
     >
       <SectionHeading> My Experience</SectionHeading>
@@ -34,6 +35,7 @@ const Experience = () => {
                   border: "1px solid rgba(0, 0, 0, 0.05)",
                   textAlign: "left",
                   padding: "1.3rem 2rem",
+                  margin: "0px 4px"
                 }}
                 contentArrowStyle={{
                   borderRight: "0.4rem solid #9ca3af",
