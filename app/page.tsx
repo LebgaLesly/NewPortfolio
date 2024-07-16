@@ -1,12 +1,12 @@
 //import components
-import Intro from "@/Components/intro";
-import SectionDivider from "@/Components/section-divider";
-import About from "@/Components/about";
-import Projects from "@/Components/projects";
-import Skills from "@/Components/skills";
-import Experience from "@/Components/experience";
-import Contact from "@/Components/contact";
-import Footer from "@/Components/footer";
+import Intro from "@/components/intro";
+import SectionDivider from "@/components/section-divider";
+import About from "@/components/about";
+import Projects from "@/components/projects";
+import Skills from "@/components/skills";
+import Experience from "@/components/experience";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function HomePage() {
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
       <Skills />
       <SectionDivider />
       <Experience />
-      <Contact /> 
+      <Contact />
       <Footer />
     </main>
   );
