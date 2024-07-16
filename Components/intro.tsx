@@ -8,19 +8,20 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
-
 //import images
 import profile from "@/public/Images/Profile1.jpeg";
 import { FaGithubSquare } from "react-icons/fa";
 import useSectionView from "@/hooks/usesectionview";
 
-
 function Intro() {
-
-  const { ref } = useSectionView("Home", 0.5)
+  const { ref } = useSectionView("Home", 0.5);
 
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id='home' ref={ref}>
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+      ref={ref}
+    >
       <div className="flex intems-center justify-center">
         <div className="relative ">
           <motion.div
@@ -84,7 +85,7 @@ function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3  flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          className="group bg-white px-7 py-3  flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10"
           href="/Resume.pdf"
           download={true}
         >
@@ -93,7 +94,7 @@ function Intro() {
         </a>
 
         <a
-          className="bg-white p-4  flex text-gray-700 items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border hover:text-gray-950 border-black/10"
+          className="bg-white p-4  flex text-gray-700 items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border hover:text-gray-950 border-black/10 dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/lebga-basi/"
           target="_blank"
         >
@@ -101,7 +102,7 @@ function Intro() {
         </a>
 
         <a
-          className="bg-white p-4  flex text-[1.35rem] text-gray-700 items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white p-4  flex text-[1.35rem] text-gray-700 items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
           href="https://github.com/LebgaLesly"
           target="_blank"
         >

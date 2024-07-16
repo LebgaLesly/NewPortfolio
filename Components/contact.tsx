@@ -56,14 +56,14 @@ const Contact = () => {
       >
         <input
           type="email"
-          className="h-14 rounded-lg border border-black/10 pl-3"
+          className="h-14 rounded-lg border border-black/10 pl-3 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your Email"
           required
           maxLength={500}
           name="senderEmail"
         />
         <textarea
-          className="h-52 my-3 rounded-lg border-black/10 p-4"
+          className="h-52 my-3 rounded-lg border-black/10 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your Message"
           required
           maxLength={500}
